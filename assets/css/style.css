@@ -1,63 +1,128 @@
-#mainTitle{
-	font-size: 30px;
-	border: 3px solid black;
-	padding: 20px;
-	background: green;
-	margin: 10px;
-	width: 20%;
+/* font-family: 'Inconsolata', monospace;
+font-family: 'Ravi Prakash', cursive;
+font-family: 'Play', sans-serif; */
 
+body {
+    background: url("../images/symphony.png");
+    background-repeat: all;
+    font-family: 'Inconsolata', monospace;
 }
+
+#mainTitle {
+    font-family: 'Ravi Prakash', cursive;
+    font-size: 30px;
+    border: 3px solid black;
+    padding: 20px;
+    background: green;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    width: 20%;
+}
+
 .clearfix:after {
-   content: " "; /* Older browser do not support empty content */
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
+    content: " ";
+    /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
 }
-#rulesText{
-	width: 40%;
-	background: yellow;
-	border: 3px solid black;
-	padding: 10px;
-	margin: 10px;
 
+#rulesText {
+    width: 40%;
+    background: yellow;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 10px;
+    float: left;
 }
-#rulesText>p{
-	margin: 5px;
-	
+
+#rulesText>p {
+    margin: 10px;
+    font-size: 18px;
 }
-#targetBox{
-	width: 20%;
-	height: 150px;
-	background: green;
-	border:3px solid black;
-	padding: 10px;
-	margin: 10px;
-	float: left;
+
+#targetBox {
+    font-family: 'Play', sans-serif;
+    width: 20%;
+    height: 120px;
+    background: green;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 10px;
+    float: left;
 }
-#statBox{
-	width: 10%;
-	height: 150px;
-	background: yellow;
-	border: 3px solid black;
-	padding: 10px;
-	margin: 10px;
-	float: left;
+
+#statBox {
+    width: 10%;
+    height: 120px;
+    background: yellow;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+    font-size: 30px;
+    font-family: 'Play', sans-serif;
 }
-img{
-	float: left;
-	width: 10%;
-	height: 100px;
+
+img {
+    float: left;
+    margin: 10px;
+    height: 150px;
 }
-#gemImg1{
-	clear: both;
-	float: left;
+
+#gemImg0 {
+    clear: both;
+    float: left;
 }
-#scoreBox{
-	clear: both;
-	border: 3px solid black;
-	padding: 10px;
-	margin: 10px;
-	background: blue;
-	width: 15%;
+
+#scoreBox {
+    font-family: 'Play', sans-serif;
+    clear: both;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background: blue;
+    width: 15%;
+    font-size: 30px;
+}
+
+#targetBox>h2 {
+    font-size: 28px;
+}
+
+#targetNumber {
+    font-size: 60px;
+}
+
+.mainContainer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.gemContainer {
+    width: 56%;
+    margin: 0 auto;
+    clear: both;
+}
+
+#gameLog {
+    margin: 0 auto;
+    width: 50%;
+    font-size: 30px;
+    text-align: center;
+}
+
+button {
+    font-size: 30px;
+    color: white;
+    background: black;
 }

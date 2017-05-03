@@ -1,38 +1,49 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Crystals Collector</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Crystals Collector</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:700|Play|Ravi+Prakash" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
-<h1 id="mainTitle">Crstals Collector</h1>
-<article id="rulesText">
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum architecto impedit illo, voluptatum. Voluptatibus, nihil dolorem ullam perferendis, eveniet provident rerum recusandae, consequuntur similique voluptatem tempore dolores culpa rem amet.</p>
-<p>Ipsa voluptatibus, iure aut. Amet perferendis quas quis illum eius modi laudantium sed quaerat soluta vel necessitatibus sint maiores repellendus voluptatum esse dolorum, aliquam ad architecto aspernatur omnis! Impedit, iure!</p>
-<p>Laudantium, inventore nisi soluta eum provident laborum voluptates esse, repellat ratione, rerum vero quos quas voluptate voluptatem amet nesciunt quidem animi ipsum illum. Saepe ratione distinctio, sit repellendus voluptatem ducimus!</p>
-<p>Expedita earum asperiores aspernatur eos fugit, explicabo facilis architecto, animi cumque delectus veritatis ipsam deleniti dolorum? Quasi veritatis adipisci quas eaque cupiditate minus reprehenderit officiis! Maiores enim incidunt delectus fugiat.</p>
-	
-</article>
-<aside id="targetBox">
-<h2>Your Number is:</h2>
-	
-</aside>
-<div id="statBox" class="clearfix">
-	
-</div>
-<img id="gemImg1" src="assets/images/gem1.jpg" alt="">
-<img src="assets/images/gem2.jpg" alt="">
-<img src="assets/images/gem3.jpg" alt="">
-<img src="assets/images/gem4.jpg" alt="">
-<div id="scoreBox">
-<p id="scoreText">Your Score is:</p>
-	<div id="scoreDisplay">
-	
-	</div>	
-</div>
-
-
-<script type="text/javascript" src="assets/js/main.js"></script>
+    <div class="mainContainer">
+        <h1 id="mainTitle">Crstals Collector</h1>
+        <div class="container">
+            <article id="rulesText">
+                <p>You will be given a random number at the start of each game</p>
+                <p>There are 4 crystals you can click that each add to your score at a set random value between 1-12</p>
+                <p>You win the game by getting your score to exactly the target score. going over will reult in a loss</p>
+                <p>The values of the crystals are hidden and you must determine them base on you score increasing</p>
+                <P>Every new game will change the values of the crystals</P>
+            </article>
+            <aside id="targetBox">
+                <h2>Your Number is:</h2>
+                <div id="targetNumber"></div>
+            </aside>
+            <div id="statBox" class="clearfix">
+                <h1>Wins: <div id="winCount">0</div></h1>
+                <h1>Losses: <div id="lossCount">0</div></h1>
+            </div>
+        </div>
+        <div class="gemContainer">
+            <img id="gemImg0" src="assets/images/gem1.jpg" alt="">
+            <img id="gemImg1" src="assets/images/gem2.jpg" alt="">
+            <img id="gemImg2" src="assets/images/gem3.jpg" alt="">
+            <img id="gemImg3" src="assets/images/gem4.jpg" alt="">
+        </div>
+        <div id="scoreBox">
+            <p id="scoreText">Your Score is:
+                <div id="scoreTotal"></div>
+            </p>
+        </div>
+        <div id="gameLog">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
+
 </html>
