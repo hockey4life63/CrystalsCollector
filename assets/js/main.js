@@ -11,8 +11,18 @@ var crystal = {
     setGem: function() {
         //1-12
         for (var i = 0; i < this.gem.length; i++) {
-            this.gem[i] = Math.floor((Math.random() * 11) + 1);
+            this.setGemNum(i);
         }
+    },
+    setGemNum: function(index) {
+        this.gem[index] = Math.floor((Math.random() * 11) + 1);
+        for (var i = 0; i < this.gem.length; i++) {
+            if (this.gem[i] === this.gem[index] && index !== i) {
+                this.setGemNum(index);
+                return
+            }
+        }
+
     },
     setTarget: function() {
         //19-120 0-101+19
